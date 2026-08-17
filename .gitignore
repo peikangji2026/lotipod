@@ -1,0 +1,39 @@
+# Python
+backend/venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+backend/.env
+backend/.env.prod
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.*.local
+
+# 本地环境文件（含密码/密钥，不提交）
+.env
+.env.prod
+.env.local
+
+# EB 临时文件（保留配置文件，忽略缓存）
+.elasticbeanstalk/
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 备份文件
+*.bak
+local_backup.sql
