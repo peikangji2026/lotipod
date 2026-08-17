@@ -12,6 +12,8 @@ app = FastAPI(
     openapi_url="/api/openapi.json",
 )
 
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
@@ -19,6 +21,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+
 
 
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["认证"])
