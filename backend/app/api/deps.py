@@ -6,6 +6,7 @@ from app.core.security import decode_token
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
 
+#hello
 
 def get_current_user(
     token: str = Depends(oauth2_scheme),
